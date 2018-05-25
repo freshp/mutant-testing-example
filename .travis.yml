@@ -1,0 +1,14 @@
+language: php
+
+php:
+  - 7.2
+
+sudo: false
+
+before_script:
+  - composer self-update
+  - composer install --no-interaction
+
+script:
+  - ./vendor/bin/phpunit -c ./phpunit.xml  --coverage-xml=./build/coverage/coverage-xml --log-junit=./build/coverage/phpunit.junit.xml --debug --verbose
+  - ./vendor/bin/infection --coverage=./build/coverage --threads=4 --min-msi=70 --log-verbosity=2

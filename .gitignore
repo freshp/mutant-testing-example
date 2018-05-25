@@ -1,0 +1,4 @@
+composer.lock
+infection-log.txt
+build
+vendor
