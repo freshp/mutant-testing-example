@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/freshp/mutant-testing-example.svg?branch=master)](https://travis-ci.org/freshp/mutant-testing-example)
 
-move-elevator/mutant-testing-example
+freshp/mutant-testing-example
 ================
 
 This is just an example of infection integration. Try to play around with this nifty package and change source directories in `infection.json` for example.
